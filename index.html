@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles.css" rel="stylesheet" />
+	<link rel="icon" type="img/png" href="imagenes/candado.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+	<title>Encriptador | ONE</title>
+</head>
+<body>
+
+	<main>
+		<!-- Image Alura -->
+
+		<div class="main-container">
+			<div class="img-container">
+				<img src="imagenes/logo_alura.png" alt="Logo Alura">
+			</div>
+
+			<!-- Left Container -->
+
+			<div class="form-container">
+				<div class="input-container">
+					<textarea class="textarea" id="text" placeholder="Ingrese el texto aqui"></textarea>
+				</div>
+				<div class="condition">
+					<img class="warning" id="warning1" src="imagenes/vector.svg" alt="ErrorImg">
+					<p class="warning" id="warning2">Solo letras minusculas y sin acentos</p>
+				</div>
+				<div class="button-container">
+					<button onclick="btnEncriptar()" class="btn-encrypted">Encriptar</button>
+					<button onclick="btnDesencriptar()" class="btn-desencrypted">Desencriptar</button>
+				</div>
+			</div>
+
+			<!-- Right Container -->
+
+			<div class="info-container">
+				<div class="noText" id="noText">
+					<img src="imagenes/muñeco.png" alt="ImgPresentacion">
+					<div class="text_info">
+						<h2>Ningun mensaje fue <br> encontrado</h2>
+						<p>Ingrese el texto que desees encriptar o <br> desencriptar</p>
+					</div>
+				</div>
+				<div class="withText" id="withText" style="display: none;">
+					<textarea readonly="true" class="mensaje" id="workingText" style="overflow:hidden"> </textarea>
+					<button onclick="copy()" id="btn-copy">Copiar</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="script.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+body {
+	margin: 0;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #cceae8;
+    color: rgb(23, 43, 77);
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+}
+
+.img-container {
+	width: auto;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+}
+
+.img-container img {
+	width: 120px;
+	height: 48px;
+	margin-right: none;
+}
+
+/* Left Container Styles */
+
+.form-container {
+	width: 950px;
+	height: 800px;
+	padding: 3rem;
+}
+
+.input-container {
+	height: 500px;
+}
+
+.textarea {
+	border: none;
+	outline:none;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	resize: none;
+
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 100%;
+
+	min-height: 40px;
+	max-width: 600px;
+	max-height: 500px;
+
+	color: black;
+	margin-top: 190px;
+	text-transform: lowercase;
+}
+
+/* Wrong letter alert "!" */
+
+.condition {
+	width: 450px;
+	display: flex;
+	height: auto;
+	align-items: center;
+	gap: 6px;
+	margin-top: 20px;
+}
+
+.condition img {
+	width: 25px;
+	animation-name: noWarning;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.warning {
+	font-style: normal;
+	font-weight: 400;
+	font-size: auto;
+	line-height: 150%;
+	color: black;
+	opacity: 0,8;
+}
+
+.condition p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: black;
+	opacity: 0,8;
+}
+
+.button-container {
+	display: flex;
+	gap: 1rem;
+	width: 600px;
+}
+
+.button-container button {
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn-encrypted {
+	background: #539091;
+	border: 1px solid black;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-desencrypted {
+	background: #68c3b7;
+	border: 1px solid black;
+	color: #000000;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn-encrypted:hover{
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+
+.btn-desencrypted:hover{
+    transition: all 0.3s ease-in;
+    transform: scale(1.05);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+
+/* Right Container Styles */
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 4rem;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	margin: 2rem;
+	background: #a8dcd9;
+	text-align: center;
+}
+
+.noText {
+	background-color: #a8dcd9;
+}
+
+.info-container img {
+	width: 260px;
+	height: 304px;
+	background-color: #a8dcd9;
+}
+
+.text_info {
+	background-color: #a8dcd9;
+}
+
+.info-container h2 {
+	background-color: #a8dcd9;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000000;
+}
+
+.info-container p {
+	background-color: #a8dcd9;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #000000;
+}
+
+.withText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #a8dcd9;
+	text-align: center;
+}
+
+#workingText {
+	background: #a8dcd9;
+	border: none;
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+	color: #000000;
+	padding-bottom: 500px;
+}
+
+#btn-copy {
+	width: 255px;
+    height: 67px;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor:pointer;
+    background: #68c3b7;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+#btn-copy:hover {
+	transform: scale(1.05);
+	transition: all 0.3s ease-in;
+	box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+
+/* Footer Container Styles */
+
+.footer-container {
+    background-color: #539091;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+}
+
+.footer-container p{
+    background: none;
+    margin: 0px;
+    color: white;
+}
+
+.footer-container a{
+    background: none;
+    color: blue;
+}
+
+.links{
+    background: none;
+	display: flex;
+	height: auto;
+	align-items: center;
+	gap: 6px;
+	margin-top: 10px;
+}
+
+.links img {
+	background: none;
+}
+
+.img-perfil {
+	width: 35px;
+}
