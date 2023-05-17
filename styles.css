@@ -4,8 +4,8 @@ body {
 
 * {
     font-family: 'Open Sans', sans-serif;
-    background-color: #cceae8;
-    color: rgb(23, 43, 77);
+    background-color: #0B2447;
+    
 }
 
 .main-container {
@@ -55,10 +55,12 @@ body {
 	max-width: 600px;
 	max-height: 500px;
 
-	color: black;
+	color: white;
 	margin-top: 190px;
 	text-transform: lowercase;
 }
+
+::placeholder { color: white; }
 
 /* Wrong letter alert "!" */
 
@@ -92,7 +94,7 @@ body {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 150%;
-	color: black;
+	color: white;
 	opacity: 0,8;
 }
 
@@ -115,14 +117,14 @@ body {
 }
 
 .btn-encrypted {
-	background: #539091;
+	background: #1D267D;
 	border: 1px solid black;
 	color: white;
 	transition: all 0.2s ease-in-out;
 }
 
 .btn-desencrypted {
-	background: #68c3b7;
+	background: #A5D7E8;
 	border: 1px solid black;
 	color: #000000;
 	transition: all 0.2s ease-in-out;
@@ -150,61 +152,63 @@ body {
 	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 	border-radius: 32px;
 	margin: 2rem;
-	background: #a8dcd9;
+	background: #1D267D;
 	text-align: center;
 }
 
 .noText {
-	background-color: #a8dcd9;
+	background-color: #1D267D;
 }
 
 .info-container img {
 	width: 260px;
 	height: 304px;
-	background-color: #a8dcd9;
+	background-color: #1D267D;
 }
 
 .text_info {
-	background-color: #a8dcd9;
+	background-color: #1D267D;
 }
 
 .info-container h2 {
-	background-color: #a8dcd9;
+	background-color: #1D267D;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 120%;
-	color: #000000;
+	color: white;
 }
 
 .info-container p {
-	background-color: #a8dcd9;
+	background-color: #1D267D;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 150%;
-	color: #000000;
+	color: white;
 }
 
 .withText {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: #a8dcd9;
+	background: #1D267D;
 	text-align: center;
 }
 
 #workingText {
-	background: #a8dcd9;
+	background: #1D267D;
 	border: none;
 	text-align: center;
 	font-weight: 400;
 	font-size: 24px;
-	color: #000000;
+	color: white;
 	padding-bottom: 500px;
 }
 
 #btn-copy {
+	border: none;
+	outline: none;
 	width: 255px;
     height: 67px;
     border-radius: 24px;
@@ -214,9 +218,9 @@ body {
     line-height: 19px;
     text-align: center;
     cursor:pointer;
-    background: #68c3b7;
+    background: #A5D7E8;
     border: 1px solid #000000;
-    color: #000000;
+    color: black;
     transition: all 0.2s ease-in-out;
     margin-top: 20px;
 }
