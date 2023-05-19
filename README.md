@@ -7,3 +7,16 @@ El entorno de la página ofrece un campo para que puedas ingresar texto y otro c
 <p align="center" >
      <img src="https://raw.githubusercontent.com/Francotadeo/Encriptador-ONE/main/imagenes/Portada_Encriptador.png">
 </p>
+
+##Funcionamiento
+
+El programa permite ingresar una cadena de texto o mensaje al cual se reemplazan sus vocales según el siguiente patrón y viceversa:
+
+```
+  'a': 'ai',
+  'e': 'entrar',
+  'i': 'imes',
+  'o': 'ober',
+  'u': 'ufat'
+
+```
